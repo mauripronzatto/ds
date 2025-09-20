@@ -1,0 +1,30 @@
+
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio 05</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <h1> ¿En qué rango está?</h1>
+  <div id="resultado" class="resultado"></div>
+<script>
+let valor = 200;
+
+if (valor >= 100 && valor <= 300) {
+  document.getElementById("resultado").innerText = "El valor está en el primer rango (100-300).";
+  document.getElementById("resultado").classList.add("info");
+} else if (valor >= 500 && valor <= 800) {
+  document.getElementById("resultado").innerText = " El valor está en el segundo rango (500-800).";
+  document.getElementById("resultado").classList.add("info");
+} else {
+  document.getElementById("resultado").innerText = " El valor no está en ningún rango.";
+  document.getElementById("resultado").classList.add("error");
+}
+
+
+
+
+</script>
+</body>
+</html>
